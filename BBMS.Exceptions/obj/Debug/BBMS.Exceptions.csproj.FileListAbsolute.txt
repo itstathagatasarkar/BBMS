@@ -1,0 +1,6 @@
+C:\Mini Project\BloodBankManagementSystem\BBMS\BBMS.Exceptions\bin\Debug\BBMS.Exceptions.dll
+C:\Mini Project\BloodBankManagementSystem\BBMS\BBMS.Exceptions\bin\Debug\BBMS.Exceptions.pdb
+C:\Mini Project\BloodBankManagementSystem\BBMS\BBMS.Exceptions\obj\Debug\BBMS.Exceptions.csprojResolveAssemblyReference.cache
+C:\Mini Project\BloodBankManagementSystem\BBMS\BBMS.Exceptions\obj\Debug\BBMS.Exceptions.csproj.CoreCompileInputs.cache
+C:\Mini Project\BloodBankManagementSystem\BBMS\BBMS.Exceptions\obj\Debug\BBMS.Exceptions.dll
+C:\Mini Project\BloodBankManagementSystem\BBMS\BBMS.Exceptions\obj\Debug\BBMS.Exceptions.pdb
