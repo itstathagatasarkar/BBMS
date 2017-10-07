@@ -78,19 +78,20 @@ namespace BBMS.BL
                     bloodBankValid = false;
                     errorString.Append("Invalid Phone Number");
                 }
-                throw new BloodBankException(errorString.ToString());
+                if(!bloodBankValid)
+                    throw new BloodBankException(errorString.ToString());
             }
-            catch (BloodBankException)
+            catch (BloodBankException ex)
             {
-                throw;
+                throw ex;
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
-                throw;
+                throw ex;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
             
             return bloodBankValid;
@@ -127,7 +128,31 @@ namespace BBMS.BL
 
         public static bool UpdateBloodBankBL(BloodBank bloodBank)
         {
-            throw new NotImplementedException();
+            bool bloodBankUpdated = false;
+
+            try
+            {
+                if (ValidateBloodBankInput(bloodBank))
+                {
+                    if (BloodBankOperations.UpdateBlooadBankDAL(bloodBank))
+                    {
+                        bloodBankUpdated = true;
+                    }
+                }
+            }
+            catch (BloodBankException ex)
+            {
+                throw ex;
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return bloodBankUpdated;
         }
 
         public static BloodBank SearchBloodBankBL(int id)

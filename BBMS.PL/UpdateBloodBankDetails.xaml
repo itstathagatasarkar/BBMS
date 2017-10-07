@@ -8,23 +8,23 @@
         Title="UpdateBloodBankDetails" Height="450" Width="400">
     <Grid>
         <ContentControl Content="UPDATE BLOOD BANK DETAILS" HorizontalAlignment="Left" Height="27" Margin="61,10,0,0" VerticalAlignment="Top" Width="268" FontSize="18" FontWeight="Bold"/>
-        <Label Content="Blood Bank Name" HorizontalAlignment="Right" Margin="0,49,264,0" VerticalAlignment="Top" RenderTransformOrigin="0.699,0.577" Height="24"/>
-        <Button Content="Search Details" HorizontalAlignment="Left" Height="29" Margin="118,87,0,0" VerticalAlignment="Top" Width="139" FontWeight="Bold" FontSize="16"/>
+        <Label Content="Blood Bank ID" HorizontalAlignment="Right" Margin="0,49,264,0" VerticalAlignment="Top" RenderTransformOrigin="0.699,0.577" Height="24"/>
+        <Button x:Name="txt_search" Content="Search Details" HorizontalAlignment="Left" Height="29" Margin="118,87,0,0" VerticalAlignment="Top" Width="139" FontWeight="Bold" FontSize="16" Click="txt_search_Click"/>
         <DataGrid HorizontalAlignment="Left" Height="279" Margin="10,131,0,0" VerticalAlignment="Top" Width="372"/>
-        <Label Content="Blood Bank Id" HorizontalAlignment="Left" Margin="23,151,0,0" VerticalAlignment="Top" Width="105" Height="24"/>
+        <Label Content="Blood Bank Name" HorizontalAlignment="Left" Margin="23,151,0,0" VerticalAlignment="Top" Width="105" Height="24"/>
         <Label Content="City" HorizontalAlignment="Left" Margin="23,212,0,0" VerticalAlignment="Top" Width="105"/>
         <Label Content="Contact Number" HorizontalAlignment="Left" Margin="23,310,0,0" VerticalAlignment="Top" RenderTransformOrigin="-4.5,3.923" Width="105"/>
         <Label Content="User Id" HorizontalAlignment="Left" Margin="23,279,0,0" VerticalAlignment="Top" Width="105" RenderTransformOrigin="0.476,1.462"/>
         <Label Content="Password" HorizontalAlignment="Left" Margin="23,243,0,0" VerticalAlignment="Top" Width="105"/>
         <Label Content="Address" HorizontalAlignment="Left" Margin="23,181,0,0" VerticalAlignment="Top" Width="105"/>
-        <TextBox HorizontalAlignment="Left" Height="24" Margin="203,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
-        <TextBox HorizontalAlignment="Left" Height="26" Margin="203,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
-        <TextBox HorizontalAlignment="Left" Height="26" Margin="203,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
-        <TextBox HorizontalAlignment="Left" Height="24" Margin="203,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
-        <TextBox HorizontalAlignment="Left" Height="26" Margin="203,279,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
-        <TextBox HorizontalAlignment="Left" Height="26" Margin="203,310,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
-        <Button Content="Update Details" HorizontalAlignment="Left" Height="29" Margin="124,361,0,0" VerticalAlignment="Top" Width="137" FontSize="16" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="203,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+        <TextBox x:Name="txt_blood_bank_name" HorizontalAlignment="Left" Height="24" Margin="203,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+        <TextBox x:Name="txt_address" HorizontalAlignment="Left" Height="26" Margin="203,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+        <TextBox x:Name="txt_city" HorizontalAlignment="Left" Height="26" Margin="203,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+        <TextBox x:Name="txt_password" HorizontalAlignment="Left" Height="24" Margin="203,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+        <TextBox x:Name="txt_user_id" HorizontalAlignment="Left" Height="26" Margin="203,279,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" IsEnabled="False"/>
+        <TextBox x:Name="txt_contact" HorizontalAlignment="Left" Height="26" Margin="203,310,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+        <Button x:Name="btn_update" Content="Update Details" HorizontalAlignment="Left" Height="29" Margin="124,361,0,0" VerticalAlignment="Top" Width="137" FontSize="16" FontWeight="Bold" Click="btn_update_Click"/>
+        <TextBox x:Name="txt_blood_bank_id" HorizontalAlignment="Left" Height="23" Margin="203,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
 
     </Grid>
 </Window>
