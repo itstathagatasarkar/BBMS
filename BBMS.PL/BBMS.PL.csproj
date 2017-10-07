@@ -57,8 +57,8 @@
     <Compile Include="AddBloodBankDetails.xaml.cs">
       <DependentUpon>AddBloodBankDetails.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AddDonorDetails.xaml.cs">
-      <DependentUpon>AddDonorDetails.xaml</DependentUpon>
+    <Compile Include="AddDonorDetails1.xaml.cs">
+      <DependentUpon>AddDonorDetails1.xaml</DependentUpon>
     </Compile>
     <Compile Include="AddHospitalDetails.xaml.cs">
       <DependentUpon>AddHospitalDetails.xaml</DependentUpon>
@@ -115,7 +115,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AddDonorDetails.xaml">
+    <Page Include="AddDonorDetails1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

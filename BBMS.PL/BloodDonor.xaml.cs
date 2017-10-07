@@ -26,7 +26,7 @@ namespace BBMS.PL
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            AddDonorDetails add = new AddDonorDetails();
+            AddDonorDetails1 add = new AddDonorDetails1();
             add.Show();
             
         }

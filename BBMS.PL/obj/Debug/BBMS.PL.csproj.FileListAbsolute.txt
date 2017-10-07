@@ -270,3 +270,34 @@ C:\MiniProject\BBMS.PL\obj\Debug\BBMS.PL.csproj.GenerateResource.Cache
 C:\MiniProject\BBMS.PL\obj\Debug\BBMS.PL.csproj.CoreCompileInputs.cache
 C:\MiniProject\BBMS.PL\obj\Debug\BBMS.PL.exe
 C:\MiniProject\BBMS.PL\obj\Debug\BBMS.PL.pdb
+C:\Mini project\BBMS.PL\obj\Debug\BBMS.PL.csprojResolveAssemblyReference.cache
+C:\Mini project\BBMS.PL\obj\Debug\MainWindow.baml
+C:\Mini project\BBMS.PL\obj\Debug\AddBloodBankDetails.g.cs
+C:\Mini project\BBMS.PL\obj\Debug\AddDonorDetails1.g.cs
+C:\Mini project\BBMS.PL\obj\Debug\BloodBank.g.cs
+C:\Mini project\BBMS.PL\obj\Debug\BloodDonationCamp.g.cs
+C:\Mini project\BBMS.PL\obj\Debug\BloodDonor.g.cs
+C:\Mini project\BBMS.PL\obj\Debug\DeleteBloodBankDetails.g.cs
+C:\Mini project\BBMS.PL\obj\Debug\DeleteDonorDetails.g.cs
+C:\Mini project\BBMS.PL\obj\Debug\DeleteHospitalDetails.g.cs
+C:\Mini project\BBMS.PL\obj\Debug\HomePage.g.cs
+C:\Mini project\BBMS.PL\obj\Debug\Hospital.g.cs
+C:\Mini project\BBMS.PL\obj\Debug\InventoryForBlood.g.cs
+C:\Mini project\BBMS.PL\obj\Debug\InventoryView.g.cs
+C:\Mini project\BBMS.PL\obj\Debug\Login.g.cs
+C:\Mini project\BBMS.PL\obj\Debug\MainWindow.g.cs
+C:\Mini project\BBMS.PL\obj\Debug\ModifyCampDetails.g.cs
+C:\Mini project\BBMS.PL\obj\Debug\OrganizeCamp.g.cs
+C:\Mini project\BBMS.PL\obj\Debug\UpdateBloodBankDetails.g.cs
+C:\Mini project\BBMS.PL\obj\Debug\UpdateDonorDetails.g.cs
+C:\Mini project\BBMS.PL\obj\Debug\UpdateHospitalDetails.g.cs
+C:\Mini project\BBMS.PL\obj\Debug\ViewBloodBankDetails.g.cs
+C:\Mini project\BBMS.PL\obj\Debug\ViewCampDetails.g.cs
+C:\Mini project\BBMS.PL\obj\Debug\ViewDonorDetails.g.cs
+C:\Mini project\BBMS.PL\obj\Debug\ViewHospitalDetails.g.cs
+C:\Mini project\BBMS.PL\obj\Debug\App.g.cs
+C:\Mini project\BBMS.PL\obj\Debug\BBMS.PL_Content.g.cs
+C:\Mini project\BBMS.PL\obj\Debug\BBMS.PL_MarkupCompile.cache
+C:\Mini project\BBMS.PL\obj\Debug\BBMS.PL_MarkupCompile.lref
+C:\Mini project\BBMS.PL\obj\Debug\BBMS.PL.exe
+C:\Mini project\BBMS.PL\obj\Debug\BBMS.PL.pdb
