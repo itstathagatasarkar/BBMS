@@ -1,0 +1,15 @@
+﻿<Window x:Class="BBMS.PL.DeleteBloodBankDetails"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BBMS.PL"
+        mc:Ignorable="d"
+        Title="DeleteBloodBankDetails" Height="300" Width="300">
+    <Grid>
+        <ContentControl Content="DELETE BLOOD BANK DETAILS" HorizontalAlignment="Left" Height="30" Margin="10,21,0,0" VerticalAlignment="Top" Width="272" FontSize="18" FontWeight="Bold"/>
+        <Label Content="Blood Bank Name" HorizontalAlignment="Right" Margin="0,96,176,0" VerticalAlignment="Top" RenderTransformOrigin="0.699,0.577" Height="27" Width="106"/>
+        <Button Content="Delete Details" HorizontalAlignment="Left" Height="32" Margin="82,156,0,0" VerticalAlignment="Top" Width="129" FontWeight="Bold" FontSize="16"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="142,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+    </Grid>
+</Window>

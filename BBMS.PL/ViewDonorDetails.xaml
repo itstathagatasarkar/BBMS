@@ -1,0 +1,21 @@
+﻿<Window x:Class="BBMS.PL.ViewDonorDetails"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BBMS.PL"
+        mc:Ignorable="d"
+        Title="ViewDonorDetails" Height="300" Width="500">
+    <Grid>
+        <Label Content="View Details By" HorizontalAlignment="Left" Margin="86,47,0,0" VerticalAlignment="Top" Width="107" FontSize="14"/>
+        <ComboBox HorizontalAlignment="Left" Margin="271,47,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged" Height="26" RenderTransformOrigin="0.508,1.423">
+            <ComboBoxItem Content="Blood Donor Id"/>
+            <ComboBoxItem Content="First Name"/>
+            <ComboBoxItem Content="Blood Group"/>
+        </ComboBox>
+        <DataGrid HorizontalAlignment="Left" Height="166" Margin="7,94,0,0" VerticalAlignment="Top" Width="475"/>
+        <ContentControl Content="VIEW DONOR DETAILS" HorizontalAlignment="Left" Height="23" Margin="126,10,0,0" VerticalAlignment="Top" Width="196" FontSize="18" FontWeight="Bold"/>
+
+
+    </Grid>
+</Window>

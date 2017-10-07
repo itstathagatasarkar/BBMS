@@ -1,0 +1,17 @@
+﻿<Window x:Class="BBMS.PL.ViewHospitalDetails"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BBMS.PL"
+        mc:Ignorable="d"
+        Title="ViewHospitalDetails" Height="450" Width="500">
+    <Grid>
+        <Label Content="Hospital Name" HorizontalAlignment="Left" Margin="61,57,0,0" VerticalAlignment="Top" Width="116"/>
+        <ContentControl Content="VIEW HOSPITAL DETAILS" HorizontalAlignment="Left" Height="29" Margin="120,10,0,0" VerticalAlignment="Top" Width="227" FontSize="18" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Height="26" Margin="268,57,-131,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155"/>
+        <DataGrid HorizontalAlignment="Left" Height="280" Margin="10,130,-190,-140" VerticalAlignment="Top" Width="472"/>
+        <Button Content="View Details" HorizontalAlignment="Left" Height="27" Margin="159,88,-1,0" VerticalAlignment="Top" Width="134" FontSize="16" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
