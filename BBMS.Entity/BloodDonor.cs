@@ -11,6 +11,7 @@ namespace BBMS.Entity
     /// </summary>
     public class BloodDonor
     {
+        #region Properties
         public int BloodDonorID { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -18,6 +19,7 @@ namespace BBMS.Entity
         public string City {get; set;}
         public string MobileNo { get; set; }
         public string BloodGroup { get; set; }
-        
+        #endregion
+
     }
 }

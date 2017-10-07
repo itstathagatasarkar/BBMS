@@ -11,5 +11,12 @@ namespace BBMS.Entity
     /// </summary>
     class BloodDonorDonation
     {
+        #region Properties
+        public int BloodDonationID { get; set; }
+        public DateTime BloodDonationDate { get; set; }
+        public int NumberofBottles { get; set; }
+        public int Weight { get; set; }
+        public int HBCount { get; set; }
+        #endregion
     }
 }

@@ -11,5 +11,12 @@ namespace BBMS.Entity
     /// </summary>
     class Hospital
     {
+        #region Properties
+        public int HospitalID{ get; set; }
+        public string HospitalName { get; set; }
+        public string Address { get; set; }
+        public string City { get; set; }
+        public int ContactNo { get; set; }
+        #endregion
     }
 }

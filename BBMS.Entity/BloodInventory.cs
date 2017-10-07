@@ -11,5 +11,11 @@ namespace BBMS.Entity
     /// </summary>
     class BloodInventory
     {
+        #region Properties
+        public int BloodInventoryID { get; set; }
+        public string BloodGroup{ get; set; }
+        public int NumberofBottles { get; set; }
+        public DateTime ExpiryDate { get; set; }
+        #endregion
     }
 }
