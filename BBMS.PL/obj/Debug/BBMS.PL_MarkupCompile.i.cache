@@ -1,0 +1,20 @@
+﻿BBMS.PL
+
+
+winexe
+C#
+.cs
+C:\Users\training\Desktop\Backup BBMS\BBMS.PL\obj\Debug\
+BBMS.PL
+none
+false
+DEBUG;TRACE
+C:\Users\training\Desktop\Backup BBMS\BBMS.PL\App.xaml
+24-319016534
+1756709346
+32-726329264
+151549850917
+AddBloodBankDetails.xaml;AddDonorDetails.xaml;AddHospitalDetails.xaml;BloodBank.xaml;BloodDonationCamp.xaml;BloodDonor.xaml;DeleteBloodBankDetails.xaml;DeleteDonorDetails.xaml;DeleteHospitalDetails.xaml;HomePage.xaml;Hospital.xaml;InventoryForBlood.xaml;InventoryView.xaml;Login.xaml;MainWindow.xaml;ModifyCampDetails.xaml;OrganizeCamp.xaml;UpdateBloodBankDetails.xaml;UpdateDonorDetails.xaml;UpdateHospitalDetails.xaml;ViewBloodBankDetails.xaml;ViewCampDetails.xaml;ViewDonorDetails.xaml;ViewHospitalDetails.xaml;
+
+True
+
