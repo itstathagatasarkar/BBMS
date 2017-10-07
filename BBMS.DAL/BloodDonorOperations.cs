@@ -10,7 +10,7 @@ using BBMS.Entity;
 using BBMS.Exceptions;
 namespace BBMS.DAL
 {
-    class BloodDonorOperations
+    public class BloodDonorOperations
     {
         #region Variables
         private static string connectionString;
@@ -40,7 +40,7 @@ namespace BBMS.DAL
         }
 
         //Adding new Blood donor 
-        public bool AddDonor(BloodDonor bd)
+        public static bool AddDonor_DAL(BloodDonor bd)
         {
             bool donorAdded = false;
             try
@@ -73,14 +73,9 @@ namespace BBMS.DAL
             }
             return donorAdded;
         }
-        public int GetDonorID()
-        {
-            int donorID = 0;
+        
 
-            return donorID;
-        }
-
-        public static List<BloodDonor> ViewDonors()
+        public static List<BloodDonor> DisplayDonors_DAL()
         {
             List<BloodDonor> donorList = new List<BloodDonor>();
             SqlDataReader rdr = null;
@@ -119,6 +114,33 @@ namespace BBMS.DAL
             }
             return donorList;
 
+        }
+
+
+        public static int GetNextEmpID_DAL()
+        {
+
+            command.CommandText = "[bbms].[bbms.usp_GetNextDonorID]";
+            command.CommandType = CommandType.StoredProcedure;
+            int id;
+            try
+            {
+                connection.Open();
+                id = Convert.ToInt32(command.ExecuteScalar());
+            }
+            catch (BloodBankException)
+            {
+                throw;
+            }
+            catch (System.Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return id;
         }
         #endregion
     }

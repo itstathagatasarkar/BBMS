@@ -22,3 +22,15 @@ C:\Users\training\Desktop\Backup BBMS\BBMS.BL\obj\Debug\BBMS.BL.csprojResolveAss
 C:\Users\training\Desktop\Backup BBMS\BBMS.BL\obj\Debug\BBMS.BL.csproj.CoreCompileInputs.cache
 C:\Users\training\Desktop\Backup BBMS\BBMS.BL\obj\Debug\BBMS.BL.dll
 C:\Users\training\Desktop\Backup BBMS\BBMS.BL\obj\Debug\BBMS.BL.pdb
+C:\MiniProject\BBMS.BL\bin\Debug\BBMS.BL.dll
+C:\MiniProject\BBMS.BL\bin\Debug\BBMS.BL.pdb
+C:\MiniProject\BBMS.BL\bin\Debug\BBMS.DAL.dll
+C:\MiniProject\BBMS.BL\bin\Debug\BBMS.Entity.dll
+C:\MiniProject\BBMS.BL\bin\Debug\BBMS.Exceptions.dll
+C:\MiniProject\BBMS.BL\bin\Debug\BBMS.DAL.pdb
+C:\MiniProject\BBMS.BL\bin\Debug\BBMS.Entity.pdb
+C:\MiniProject\BBMS.BL\bin\Debug\BBMS.Exceptions.pdb
+C:\MiniProject\BBMS.BL\obj\Debug\BBMS.BL.csprojResolveAssemblyReference.cache
+C:\MiniProject\BBMS.BL\obj\Debug\BBMS.BL.csproj.CoreCompileInputs.cache
+C:\MiniProject\BBMS.BL\obj\Debug\BBMS.BL.dll
+C:\MiniProject\BBMS.BL\obj\Debug\BBMS.BL.pdb

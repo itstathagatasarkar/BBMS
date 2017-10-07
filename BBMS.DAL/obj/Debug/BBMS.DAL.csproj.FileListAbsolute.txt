@@ -18,3 +18,13 @@ C:\Users\training\Desktop\Backup BBMS\BBMS.DAL\obj\Debug\BBMS.DAL.csprojResolveA
 C:\Users\training\Desktop\Backup BBMS\BBMS.DAL\obj\Debug\BBMS.DAL.csproj.CoreCompileInputs.cache
 C:\Users\training\Desktop\Backup BBMS\BBMS.DAL\obj\Debug\BBMS.DAL.dll
 C:\Users\training\Desktop\Backup BBMS\BBMS.DAL\obj\Debug\BBMS.DAL.pdb
+C:\MiniProject\BBMS.DAL\bin\Debug\BBMS.DAL.dll
+C:\MiniProject\BBMS.DAL\bin\Debug\BBMS.DAL.pdb
+C:\MiniProject\BBMS.DAL\bin\Debug\BBMS.Entity.dll
+C:\MiniProject\BBMS.DAL\bin\Debug\BBMS.Exceptions.dll
+C:\MiniProject\BBMS.DAL\bin\Debug\BBMS.Entity.pdb
+C:\MiniProject\BBMS.DAL\bin\Debug\BBMS.Exceptions.pdb
+C:\MiniProject\BBMS.DAL\obj\Debug\BBMS.DAL.csprojResolveAssemblyReference.cache
+C:\MiniProject\BBMS.DAL\obj\Debug\BBMS.DAL.csproj.CoreCompileInputs.cache
+C:\MiniProject\BBMS.DAL\obj\Debug\BBMS.DAL.dll
+C:\MiniProject\BBMS.DAL\obj\Debug\BBMS.DAL.pdb

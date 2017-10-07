@@ -4,3 +4,9 @@ C:\Mini Project\BloodBankManagementSystem\BBMS\BBMS.Entity\obj\Debug\BBMS.Entity
 C:\Mini Project\BloodBankManagementSystem\BBMS\BBMS.Entity\obj\Debug\BBMS.Entity.csproj.CoreCompileInputs.cache
 C:\Mini Project\BloodBankManagementSystem\BBMS\BBMS.Entity\obj\Debug\BBMS.Entity.dll
 C:\Mini Project\BloodBankManagementSystem\BBMS\BBMS.Entity\obj\Debug\BBMS.Entity.pdb
+C:\MiniProject\BBMS.Entity\bin\Debug\BBMS.Entity.dll
+C:\MiniProject\BBMS.Entity\bin\Debug\BBMS.Entity.pdb
+C:\MiniProject\BBMS.Entity\obj\Debug\BBMS.Entity.csprojResolveAssemblyReference.cache
+C:\MiniProject\BBMS.Entity\obj\Debug\BBMS.Entity.csproj.CoreCompileInputs.cache
+C:\MiniProject\BBMS.Entity\obj\Debug\BBMS.Entity.dll
+C:\MiniProject\BBMS.Entity\obj\Debug\BBMS.Entity.pdb

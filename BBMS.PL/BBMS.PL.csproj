@@ -272,15 +272,15 @@
     <Resource Include="blooddrop.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\Mini Project\BloodBankManagementSystem\BBMS\BBMS.BL\BBMS.BL.csproj">
+    <ProjectReference Include="..\BBMS.BL\BBMS.BL.csproj">
       <Project>{258bf1b6-fffb-48d4-ba57-5f4684b51a23}</Project>
       <Name>BBMS.BL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Mini Project\BloodBankManagementSystem\BBMS\BBMS.Entity\BBMS.Entity.csproj">
+    <ProjectReference Include="..\BBMS.Entity\BBMS.Entity.csproj">
       <Project>{1587460f-65f7-4c9f-8eb1-c88a35fb0a56}</Project>
       <Name>BBMS.Entity</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Mini Project\BloodBankManagementSystem\BBMS\BBMS.Exceptions\BBMS.Exceptions.csproj">
+    <ProjectReference Include="..\BBMS.Exceptions\BBMS.Exceptions.csproj">
       <Project>{91c7b764-4557-4d45-b905-d462efb8a8cc}</Project>
       <Name>BBMS.Exceptions</Name>
     </ProjectReference>
