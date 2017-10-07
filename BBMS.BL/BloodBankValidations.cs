@@ -53,32 +53,46 @@ namespace BBMS.BL
         {
             StringBuilder errorString = new StringBuilder();
             bool bloodBankValid = true;
+            try
+            {
+                if (bloodBank.BloodBankName == String.Empty)
+                {
+                    bloodBankValid = false;
+                    errorString.Append("Blood Bank Name Cannot Be Empty\n");
+                }
 
-            if (bloodBank.BloodBankName == String.Empty)
-            {
-                bloodBankValid = false;
-                errorString.Append("Blood Bank Name Cannot Be Empty\n");
-            }
-                
-            if(bloodBank.City == String.Empty)
-            {
-                bloodBankValid = false;
-                errorString.Append("City Cannot Be Empty\n");
-            }
+                if (bloodBank.City == String.Empty)
+                {
+                    bloodBankValid = false;
+                    errorString.Append("City Cannot Be Empty\n");
+                }
 
-            if(bloodBank.Address == String.Empty)
-            {
-                bloodBankValid = false;
-                errorString.Append("Address Cannot be Empty");
-            }
+                if (bloodBank.Address == String.Empty)
+                {
+                    bloodBankValid = false;
+                    errorString.Append("Address Cannot be Empty");
+                }
 
-            if (!Regex.IsMatch(bloodBank.ContactNumber,"^[7-9][0-9]{9}$"))
+                if (!Regex.IsMatch(bloodBank.ContactNumber, "^[7-9][0-9]{9}$"))
+                {
+                    bloodBankValid = false;
+                    errorString.Append("Invalid Phone Number");
+                }
+                throw new BloodBankException(errorString.ToString());
+            }
+            catch (BloodBankException)
             {
-                bloodBankValid = false;
-                errorString.Append("Invalid Phone Number");
+                throw;
+            }
+            catch (SqlException)
+            {
+                throw;
+            }
+            catch (Exception)
+            {
+                throw;
             }
             
-
             return bloodBankValid;
         }
 
@@ -87,10 +101,13 @@ namespace BBMS.BL
             bool bloodBankAdded = false;
             try
             {
-                if (BloodBankOperations.AddBloodBankDAL(bloodBank))
+                if (ValidateBloodBankInput(bloodBank))
                 {
-                    bloodBankAdded = true;
-                }                
+                    if (BloodBankOperations.AddBloodBankDAL(bloodBank))
+                    {
+                        bloodBankAdded = true;
+                    }
+                }
             }
             catch (BloodBankException ex)
             {

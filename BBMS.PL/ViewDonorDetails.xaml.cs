@@ -25,6 +25,11 @@ namespace BBMS.PL
             List<BBMS.Entity.BloodDonor> donorList = new List<BBMS.Entity.BloodDonor>();
             donorList = BloodDonorValidations.DisplayDonor_BL();
             dt_donor_list.ItemsSource = donorList;
+        }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }   
     }
 }
