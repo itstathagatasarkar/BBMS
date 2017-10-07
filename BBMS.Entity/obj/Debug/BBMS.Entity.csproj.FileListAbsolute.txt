@@ -10,3 +10,8 @@ C:\MiniProject\BBMS.Entity\obj\Debug\BBMS.Entity.csprojResolveAssemblyReference.
 C:\MiniProject\BBMS.Entity\obj\Debug\BBMS.Entity.csproj.CoreCompileInputs.cache
 C:\MiniProject\BBMS.Entity\obj\Debug\BBMS.Entity.dll
 C:\MiniProject\BBMS.Entity\obj\Debug\BBMS.Entity.pdb
+C:\Mini Project\BBMS.Entity\bin\Debug\BBMS.Entity.dll
+C:\Mini Project\BBMS.Entity\bin\Debug\BBMS.Entity.pdb
+C:\Mini Project\BBMS.Entity\obj\Debug\BBMS.Entity.csprojResolveAssemblyReference.cache
+C:\Mini Project\BBMS.Entity\obj\Debug\BBMS.Entity.dll
+C:\Mini Project\BBMS.Entity\obj\Debug\BBMS.Entity.pdb

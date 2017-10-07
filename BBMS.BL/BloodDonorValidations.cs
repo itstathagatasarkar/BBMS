@@ -16,7 +16,7 @@ namespace BBMS.BL
     /// Change Date: 04/09/2017
     /// </summary>
 
-    class BloodDonorValidations
+    public class BloodDonorValidations
     {
         public static bool ValidateDonor(BloodDonor donor)
         {
@@ -107,7 +107,25 @@ namespace BBMS.BL
             }
             return donorList;
         }
-        
+
+        public static BloodDonor SearchDonor_BL(int donorId)
+        {
+            BloodDonor donor = null;
+            try
+            {
+                donor = BloodDonorOperations.SearchDonor_DAL(donorId);
+            }
+            catch (BloodBankException)
+            {
+                throw;
+            }
+            catch (SystemException)
+            {
+                throw;
+            }
+            return donor;
+        }
+
         public static int GetNextEmpID_BL()
         {
             return BloodDonorOperations.GetNextEmpID_DAL();

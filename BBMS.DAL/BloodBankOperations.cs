@@ -43,6 +43,41 @@ namespace BBMS.DAL
         {
             return ConfigurationManager.ConnectionStrings["BloodBankManagementConnectionString"].ConnectionString;
         }
+
+        public static int GetNextBloodBankIdDAL()
+        {
+            int id = -1;
+            try
+            {
+                command.CommandText = "[bbms].[usp_CurrentBloodBankID]";
+                command.Parameters.Clear();
+
+                connection.Open();
+                Int32.TryParse(command.ExecuteScalar().ToString(), out id);
+                ++id;
+            }
+            catch (BloodBankException)
+            {
+                throw;
+            }
+            catch (SqlException)
+            {
+                throw;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                if (connection.State == ConnectionState.Open)
+                {
+                    connection.Close();
+                }
+            }
+            return id;
+        }
+
         public static bool ValidateBloodBankDAL(string userName, string password)
         {
             bool bloodBankValid = false;
@@ -90,7 +125,8 @@ namespace BBMS.DAL
 
 
             return bloodBankValid;
-        }
+        }       
+
         /// <summary>
         /// Returns the current BloodBank ID
         /// </summary>
@@ -181,9 +217,47 @@ namespace BBMS.DAL
         /// </summary>
         /// <param name="bloodBank"></param>
         /// <returns></returns>
-        public static bool UpdateDAL(BloodBank bloodBank)
+        public static bool UpdateBlooadBankDAL(BloodBank bloodBank)
         {
-            return false;
+            bool bloodBankUpdated = false;
+            try
+            {
+                command.CommandText = "bbms.usp_UpdateBloodBank";
+                command.Parameters.Clear();
+
+                command.Parameters.AddWithValue("@bloodBankID", bloodBank.BloodBankID);
+                command.Parameters.AddWithValue("@bloodBankName", bloodBank.BloodBankName);
+                command.Parameters.AddWithValue("@address", bloodBank.Address);
+                command.Parameters.AddWithValue("@city", bloodBank.City);
+                command.Parameters.AddWithValue("@contactNumber", bloodBank.ContactNumber);
+                connection.Open();
+                int rowsAffected = command.ExecuteNonQuery();
+
+                if (rowsAffected > 0)
+                    bloodBankUpdated = true;
+            }
+            catch (BloodBankException)
+            {
+                throw;
+            }
+            catch (SqlException)
+            {
+                throw;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                if (connection.State == ConnectionState.Open)
+                {
+                    connection.Close();
+                }
+            }
+
+
+            return bloodBankUpdated;
         }
         /// <summary>
         /// Deletes Blood Bank
@@ -202,7 +276,63 @@ namespace BBMS.DAL
         {
             return new BloodBank();
         }
+        public static BloodBank SearchBloodBankDAL(int id)
+        {
+            BloodBank bloodBank = null;
 
+            try
+            {
+                command.CommandText = "bbms.usp_SearchUserForUpdate";
+                command.Parameters.Clear();
+                command.Parameters.AddWithValue("@bloodBankID", id);
+
+                connection.Open();
+                SqlDataReader reader;
+
+                reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    reader.Read();
+
+                    bloodBank = new BloodBank();
+                    bloodBank.BloodBankID = Convert.ToInt32(reader[0]);
+                    bloodBank.BloodBankName = reader[1].ToString();
+                    bloodBank.Address = reader[2].ToString();
+                    bloodBank.City = reader[3].ToString();
+                    bloodBank.ContactNumber = reader[4].ToString();
+                    
+                    
+                }
+                else
+                {
+                    throw new BloodBankException("Invalid Blood Bank with ID #" + id);
+                }
+
+                ++id;
+
+            }
+            catch (BloodBankException)
+            {
+                throw;
+            }
+            catch (SqlException)
+            {
+                throw;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                if (connection.State == ConnectionState.Open)
+                {
+                    connection.Close();
+                }
+            }
+
+            return bloodBank;
+        }
 
         #endregion
 

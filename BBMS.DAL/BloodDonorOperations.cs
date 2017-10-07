@@ -10,6 +10,7 @@ using BBMS.Entity;
 using BBMS.Exceptions;
 namespace BBMS.DAL
 {
+
     public class BloodDonorOperations
     {
         #region Variables
@@ -141,6 +142,55 @@ namespace BBMS.DAL
                 connection.Close();
             }
             return id;
+        }
+
+
+        public static BloodDonor SearchDonor_DAL(int donorId)
+        {
+            BloodDonor donor = new BloodDonor();
+            SqlDataReader rdr = null;
+            try
+            {
+
+                command.CommandText = "[bbms].[bbms.usp_SearchDonor]";
+                command.Parameters.Clear();
+                command.Parameters.AddWithValue("@BloodDonorID", donorId);
+                connection.Open();
+                DataTable dt = new DataTable();
+
+                rdr = command.ExecuteReader();
+                if (rdr.HasRows)
+                {
+                    while (rdr.Read())
+                    {
+                        donor.BloodDonorID = (int)rdr["BloodDonorID"];
+                        donor.FirstName = rdr["FirstName"].ToString();
+                        donor.LastName=rdr["LastName"].ToString();
+                        donor.Address = rdr["Address"].ToString();
+                        donor.City= rdr["City"].ToString();
+                        donor.MobileNo = rdr["MobileNo"].ToString();
+                        donor.BloodGroup = rdr["BloodGroup"].ToString();
+                    }
+                }
+                else
+                {
+                    throw new BloodBankException("No donor found with Donor ID" + donorId);
+                }
+            }
+            catch (BloodBankException)
+            {
+                throw;
+            }
+            catch (System.Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                rdr.Close();
+                connection.Close();
+            }
+            return donor;
         }
         #endregion
     }

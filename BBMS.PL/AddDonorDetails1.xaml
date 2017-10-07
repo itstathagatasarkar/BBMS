@@ -15,15 +15,15 @@
         <Label Content="City" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="44,262,0,0" RenderTransformOrigin="0.366,1.154"/>
         <Label Content="Mobile Number" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="44,306,0,0"/>
         <Label Content="BloodGroup" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="44,354,0,0" RenderTransformOrigin="0.543,0.689"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="225,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="225,124,0,0"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="225,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="225,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="225,267,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="225,310,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox IsEnabled="False" Name="txt_donor_id" HorizontalAlignment="Left" Height="23" Margin="225,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_fname" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="225,124,0,0"/>
+        <TextBox x:Name="txt_lname" HorizontalAlignment="Left" Height="23" Margin="225,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_addr" HorizontalAlignment="Left" Height="23" Margin="225,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_city" HorizontalAlignment="Left" Height="23" Margin="225,267,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" />
+        <TextBox x:Name="txt_mobile" HorizontalAlignment="Left" Height="23" Margin="225,310,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Button Content="ADD DETAILS" HorizontalAlignment="Left" Margin="148,419,0,0" VerticalAlignment="Top" Width="95" FontWeight="Bold" Height="27" Click="Button_Click"/>
-        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
-        <ComboBox HorizontalAlignment="Left" Margin="225,358,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.53,0.835">
+        
+        <ComboBox x:Name="cmb_blood_group" HorizontalAlignment="Left" Margin="225,358,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.53,0.835">
             <ComboBoxItem Content="A-"/>
             <ComboBoxItem Content="A+"/>
             <ComboBoxItem Content="B+"/>

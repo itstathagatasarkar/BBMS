@@ -19,7 +19,7 @@ namespace BBMS.Entity
         public string BloodBankName { get; set; }
         public string Address { get; set; }
         public string City { get; set; }
-        public int ContactNumber { get; set; }
+        public string ContactNumber { get; set; }
         public string UserID { get; set; }
         public string Password { get; set; }
         #endregion

@@ -13,7 +13,7 @@
             <ComboBoxItem Content="First Name"/>
             <ComboBoxItem Content="Blood Group"/>
         </ComboBox>
-        <DataGrid HorizontalAlignment="Left" Height="166" Margin="7,94,0,0" VerticalAlignment="Top" Width="475"/>
+        <DataGrid Name="dt_donor_list" HorizontalAlignment="Left" Height="166" Margin="7,94,0,0" VerticalAlignment="Top" Width="475"/>
         <ContentControl Content="VIEW DONOR DETAILS" HorizontalAlignment="Left" Height="23" Margin="126,10,0,0" VerticalAlignment="Top" Width="196" FontSize="18" FontWeight="Bold"/>
 
 
