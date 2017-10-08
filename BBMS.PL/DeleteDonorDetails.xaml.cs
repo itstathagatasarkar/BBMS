@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BBMS.BL;
+using BBMS.Exceptions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +24,16 @@ namespace BBMS.PL
         public DeleteDonorDetails()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            int id=Convert.ToInt32( txt_donor_id.Text);
+            bool donorDeleted = BloodDonorValidations.DeleteDonor_BL(id);
+            if (donorDeleted)
+                MessageBox.Show("Donor Successfully deleted");
+            else
+                throw new BloodBankException("Donor not successfully deleted");
         }
     }
 }

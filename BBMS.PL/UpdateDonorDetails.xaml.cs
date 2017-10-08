@@ -18,7 +18,7 @@ using System.Windows.Shapes;
 namespace BBMS.PL
 {
     /// <summary>
-    /// Interaction logic for UpdateDonorDetails.xaml
+    /// Search and Update logic for Donor
     /// </summary>
     public partial class UpdateDonorDetails : Window
     {
@@ -48,6 +48,38 @@ namespace BBMS.PL
                 {
                     throw new BloodBankException("Donor ID " + donorId + " does not exists");
                 }
+            }
+            catch (BloodBankException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                int donorId = Convert.ToInt32(txt_donor_id.Text);
+                BBMS.Entity.BloodDonor donor = new BBMS.Entity.BloodDonor();
+                donor.FirstName=txt_fname.Text;
+                donor.LastName=txt_lname.Text ;
+                donor.Address=txt_addr.Text;
+                donor.City=txt_city.Text ;
+                donor.MobileNo=txt_mobile.Text ;
+                donor.BloodGroup = txt_blood_group.Text;
+                bool donorUpdated = BloodDonorValidations.UpdateDonor_BL(donor);
+                if (donorUpdated)
+                    MessageBox.Show("Donor successfully updated");
+                else
+                    throw new BloodBankException("Donor not successfully updated");
             }
             catch (BloodBankException ex)
             {

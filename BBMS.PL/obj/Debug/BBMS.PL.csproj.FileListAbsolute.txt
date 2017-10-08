@@ -339,3 +339,6 @@ C:\Mini Project\BBMS.PL\obj\Debug\ViewHospitalDetails.baml
 C:\Mini Project\BBMS.PL\obj\Debug\BBMS.PL.g.resources
 C:\Mini Project\BBMS.PL\obj\Debug\BBMS.PL.Properties.Resources.resources
 C:\Mini Project\BBMS.PL\obj\Debug\BBMS.PL.csproj.GenerateResource.Cache
+F:\MiniProject\BBMS\BBMS.PL\bin\Debug\BBMS.PL.exe.config
+F:\MiniProject\BBMS\BBMS.PL\obj\Debug\BBMS.PL.exe
+F:\MiniProject\BBMS\BBMS.PL\obj\Debug\BBMS.PL.pdb

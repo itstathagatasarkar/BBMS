@@ -48,47 +48,47 @@ namespace BBMS.BL
             }
             return donorAdded;
         }
-        //public static bool UpdateDonor_BL(BloodDonor donor)
-        //{
-        //    bool donorUpdated = false;
-        //    try
-        //    {
-        //        if (ValidateDonor(donor))
-        //        {
-        //            donorUpdated = BloodDonorOperations.UpdateEmployee_DAL(emp);
-        //        }
-        //        else
-        //        {
-        //            throw new BloodBankException("Employee Details Are Invalid!");
-        //        }
-        //    }
-        //    catch (BloodBankException)
-        //    {
-        //        throw;
-        //    }
-        //    catch (System.Exception)
-        //    {
-        //        throw;
-        //    }
-        //    return donorUpdated;
-        //}
-        //public static bool DeleteDonor_BL(int donorID)
-        //{
-        //    bool donorDeleted = false;
-        //    try
-        //    {
-        //        donorDeleted = BloodDonorOperations.DeleteEmployee_DAL(donorID);
-        //    }
-        //    catch (BloodBankException)
-        //    {
-        //        throw;
-        //    }
-        //    catch (System.Exception)
-        //    {
-        //        throw;
-        //    }
-        //    return donorDeleted;
-        //}
+        public static bool UpdateDonor_BL(BloodDonor donor)
+        {
+            bool donorUpdated = false;
+            try
+            {
+                if (ValidateDonor(donor))
+                {
+                    donorUpdated = BloodDonorOperations.UpdateDonor_DAL(donor);
+                }
+                else
+                {
+                    throw new BloodBankException("Employee Details Are Invalid!");
+                }
+            }
+            catch (BloodBankException)
+            {
+                throw;
+            }
+            catch (System.Exception)
+            {
+                throw;
+            }
+            return donorUpdated;
+        }
+        public static bool DeleteDonor_BL(int donorID)
+        {
+            bool donorDeleted = false;
+            try
+            {
+                donorDeleted = BloodDonorOperations.DeleteDonor_DAL(donorID);
+            }
+            catch (BloodBankException)
+            {
+                throw;
+            }
+            catch (System.Exception)
+            {
+                throw;
+            }
+            return donorDeleted;
+        }
         
         public static List<BloodDonor> DisplayDonor_BL()
         {

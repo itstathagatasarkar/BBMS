@@ -192,6 +192,68 @@ namespace BBMS.DAL
             }
             return donor;
         }
+        public static bool UpdateDonor_DAL(BloodDonor bd)
+        {
+            bool donorUpdated = false;
+            try
+            {
+                command.CommandText = "[bbms].[bbms.usp_UpdateDonor]";
+                command.Parameters.Clear();
+                command.Parameters.AddWithValue("", bd.BloodDonorID);
+                command.Parameters.AddWithValue("", bd.FirstName);
+                command.Parameters.AddWithValue("", bd.LastName);
+                command.Parameters.AddWithValue("", bd.Address);
+                command.Parameters.AddWithValue("", bd.City);
+                command.Parameters.AddWithValue("", bd.MobileNo);
+                command.Parameters.AddWithValue("", bd.BloodGroup);
+                connection.Open();
+                int affectedRows = command.ExecuteNonQuery();
+                if (affectedRows > 0)
+                    donorUpdated = true;
+
+            }
+            catch (BloodBankException)
+            {
+                throw;
+            }
+            catch (System.Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return donorUpdated;
+        }
+        public static bool DeleteDonor_DAL(int id)
+        {
+            bool donorDeleted = false;
+            try
+            {
+                command.CommandText = "[bbms].[bbms.usp_UpdateDonor]";
+                command.Parameters.Clear();
+                command.Parameters.AddWithValue("@BloodDonorID", id);
+                connection.Open();
+                int result = command.ExecuteNonQuery();
+                if (result > 0)
+                    donorDeleted = true;
+            }
+            catch (BloodBankException)
+            {
+                throw;
+            }
+            catch (System.Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return donorDeleted;
+        }
+
         #endregion
     }
 }
