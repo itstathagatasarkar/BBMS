@@ -36,10 +36,12 @@ namespace BBMS.PL
             {
                 bloodBankList = BloodBankValidations.GetBloodBankListBL();
                 
-                foreach (Entity.BloodBank item in bloodBankList)
-                {
-                    gridview_display.Items.Add(item);
-                }
+                //foreach (Entity.BloodBank item in bloodBankList)
+                //{
+                //    gridview_display.Items.Add(item);
+                //}
+
+                gridview_display.ItemsSource = bloodBankList;
                 
 
 
