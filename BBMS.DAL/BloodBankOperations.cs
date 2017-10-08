@@ -264,9 +264,44 @@ namespace BBMS.DAL
         /// </summary>
         /// <param name="bloodBankID"></param>
         /// <returns></returns>
-        public static bool DeleteDAL(int bloodBankID)
+        public static bool DeleteBloodBankDAL(int bloodBankID)
         {
-            return false;
+            bool bloodBankDeleted = false;
+
+            try
+            {
+                command.CommandText = "bbms.usp_DeleteBloodBank";
+                command.Parameters.Clear();
+
+                command.Parameters.AddWithValue("@bloodBankID", bloodBankID);
+                
+                connection.Open();
+                int rowsAffected = command.ExecuteNonQuery();
+
+                if (rowsAffected > 0)
+                    bloodBankDeleted = true;
+            }
+            catch (BloodBankException)
+            {
+                throw;
+            }
+            catch (SqlException)
+            {
+                throw;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                if (connection.State == ConnectionState.Open)
+                {
+                    connection.Close();
+                }
+            }
+
+            return bloodBankDeleted;
         }
         public static bool DonateBloodDAL()
         {
@@ -308,7 +343,7 @@ namespace BBMS.DAL
                     throw new BloodBankException("Invalid Blood Bank with ID #" + id);
                 }
 
-                ++id;
+                
 
             }
             catch (BloodBankException)
@@ -332,6 +367,53 @@ namespace BBMS.DAL
             }
 
             return bloodBank;
+        }
+        public static List<BloodBank> GetBloodBankListDAL()
+        {
+            List<BloodBank> bloodBankList = null;
+            try
+            {
+                command.CommandText = "bbms.usp_ViewBloodBanks";
+                command.Parameters.Clear();               
+
+                connection.Open();
+                SqlDataReader reader;
+
+                reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    bloodBankList = new List<BloodBank>();
+                    while (reader.Read())
+                    {
+                        BloodBank bloodBank = new BloodBank();
+                        bloodBank.BloodBankID = Convert.ToInt32(reader[0]);
+                        bloodBank.BloodBankName = reader[1].ToString();
+                        bloodBank.Address = reader[2].ToString();
+                        bloodBank.City = reader[3].ToString();
+                        bloodBank.ContactNumber = reader[4].ToString();
+
+                        bloodBankList.Add(bloodBank);
+
+                    }
+                }
+                else
+                {
+                    throw new BloodBankException("No Blood Banks in the Data Base");
+                }
+            }
+            catch(BloodBankException) 
+            {
+                throw;
+            }
+            catch(SqlException)
+            {
+                throw;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            return bloodBankList;
         }
 
         #endregion

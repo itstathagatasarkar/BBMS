@@ -12,6 +12,11 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+using BBMS.BL;
+using BBMS.Entity;
+using BBMS.Exceptions;
+using System.Data.SqlClient;
+
 namespace BBMS.PL
 {
     /// <summary>
@@ -22,6 +27,36 @@ namespace BBMS.PL
         public ViewBloodBankDetails()
         {
             InitializeComponent();
+            DisplayBloodBank();
+        }
+
+        private void DisplayBloodBank() {
+            List<Entity.BloodBank> bloodBankList = null;
+            try
+            {
+                bloodBankList = BloodBankValidations.GetBloodBankListBL();
+                
+                foreach (Entity.BloodBank item in bloodBankList)
+                {
+                    gridview_display.Items.Add(item);
+                }
+                
+
+
+            }
+            catch (BloodBankException ex)
+            {
+                MessageBox.Show("Exception: " + ex.Message);
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Exception: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Exception: " + ex.Message);
+            }
+
         }
     }
 }

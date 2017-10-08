@@ -177,5 +177,55 @@ namespace BBMS.BL
             return bloodBank;
         }
 
+        public static bool DeleteBloodBankBL(int id)
+        {
+            bool bloodBankDeleted = false;
+
+            try
+            {
+                if (SearchBloodBankBL(id) != null)
+                {
+                    bloodBankDeleted = BloodBankOperations.DeleteBloodBankDAL(id);
+                }
+                
+            }
+            catch (BloodBankException ex)
+            {
+                throw ex;
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return bloodBankDeleted;
+        }
+
+        public static List<BloodBank> GetBloodBankListBL()
+        {
+            List<BloodBank> bloodBankList = null;
+            try
+            {
+                bloodBankList = BloodBankOperations.GetBloodBankListDAL();
+            }
+            catch (BloodBankException ex)
+            {
+                throw ex;
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return bloodBankList;
+        }
+
     }
 }
