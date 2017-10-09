@@ -214,7 +214,6 @@ C:\MiniProject\BBMS.PL\bin\Debug\BBMS.DAL.pdb
 C:\MiniProject\BBMS.PL\obj\Debug\BBMS.PL.csprojResolveAssemblyReference.cache
 C:\MiniProject\BBMS.PL\obj\Debug\MainWindow.baml
 C:\MiniProject\BBMS.PL\obj\Debug\AddBloodBankDetails.g.cs
-C:\MiniProject\BBMS.PL\obj\Debug\AddDonorDetails.g.cs
 C:\MiniProject\BBMS.PL\obj\Debug\AddHospitalDetails.g.cs
 C:\MiniProject\BBMS.PL\obj\Debug\BloodBank.g.cs
 C:\MiniProject\BBMS.PL\obj\Debug\BloodDonationCamp.g.cs
@@ -242,7 +241,6 @@ C:\MiniProject\BBMS.PL\obj\Debug\BBMS.PL_Content.g.cs
 C:\MiniProject\BBMS.PL\obj\Debug\BBMS.PL_MarkupCompile.cache
 C:\MiniProject\BBMS.PL\obj\Debug\BBMS.PL_MarkupCompile.lref
 C:\MiniProject\BBMS.PL\obj\Debug\AddBloodBankDetails.baml
-C:\MiniProject\BBMS.PL\obj\Debug\AddDonorDetails.baml
 C:\MiniProject\BBMS.PL\obj\Debug\AddHospitalDetails.baml
 C:\MiniProject\BBMS.PL\obj\Debug\BloodBank.baml
 C:\MiniProject\BBMS.PL\obj\Debug\BloodDonationCamp.baml
@@ -342,3 +340,5 @@ C:\Mini Project\BBMS.PL\obj\Debug\BBMS.PL.csproj.GenerateResource.Cache
 F:\MiniProject\BBMS\BBMS.PL\bin\Debug\BBMS.PL.exe.config
 F:\MiniProject\BBMS\BBMS.PL\obj\Debug\BBMS.PL.exe
 F:\MiniProject\BBMS\BBMS.PL\obj\Debug\BBMS.PL.pdb
+C:\MiniProject\BBMS.PL\obj\Debug\AddDonorDetails1.g.cs
+C:\MiniProject\BBMS.PL\obj\Debug\AddDonorDetails1.baml

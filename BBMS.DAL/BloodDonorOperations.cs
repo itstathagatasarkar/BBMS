@@ -10,7 +10,12 @@ using BBMS.Entity;
 using BBMS.Exceptions;
 namespace BBMS.DAL
 {
-
+    /// <summary>
+    /// Name: Arunodoy Datta
+    /// Description: This class is for BloodDonor Operations(Data Access Layer)
+    /// Date of Creation: 02-Oct-2017
+    /// Change Date: 09-Oct-2017
+    /// </summary>
     public class BloodDonorOperations
     {
         #region Variables
