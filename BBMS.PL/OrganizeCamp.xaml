@@ -21,7 +21,7 @@
         <TextBox HorizontalAlignment="Left" Height="23" Margin="232,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="232,287,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.868,1.048"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="232,325,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.518,2.081"/>
-        <Button Content="Add Camp Details" HorizontalAlignment="Left" Height="36" Margin="104,364,0,0" VerticalAlignment="Top" Width="148" FontSize="14"/>
+        <Button Content="Add Camp Details" HorizontalAlignment="Left" Height="36" Margin="104,364,0,0" VerticalAlignment="Top" Width="148" FontSize="14" Click="Button_Click"/>
         <ContentControl Content="ORGANIZE CAMP" HorizontalAlignment="Left" Height="29" Margin="112,10,0,0" VerticalAlignment="Top" Width="163" FontSize="18" FontWeight="Bold"/>
 
     </Grid>
