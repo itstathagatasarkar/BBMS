@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\MiniProject\BBMS.PL\obj\Debug\
+F:\MiniProject\BBMS\BBMS.PL\obj\Debug\
 BBMS.PL
 none
 false
 DEBUG;TRACE
-C:\MiniProject\BBMS.PL\App.xaml
+F:\MiniProject\BBMS\BBMS.PL\App.xaml
 24-912579676
 1756709346
-32-1834797056
-15756070686
+32-1383904871
+15-1266492089
 AddBloodBankDetails.xaml;AddDonorDetails1.xaml;AddHospitalDetails.xaml;BloodBank.xaml;BloodDonationCamp.xaml;BloodDonor.xaml;DeleteBloodBankDetails.xaml;DeleteDonorDetails.xaml;DeleteHospitalDetails.xaml;HomePage.xaml;Hospital.xaml;InventoryForBlood.xaml;InventoryView.xaml;Login.xaml;MainWindow.xaml;ModifyCampDetails.xaml;OrganizeCamp.xaml;UpdateBloodBankDetails.xaml;UpdateDonorDetails.xaml;UpdateHospitalDetails.xaml;ViewBloodBankDetails.xaml;ViewCampDetails.xaml;ViewDonorDetails.xaml;ViewHospitalDetails.xaml;
 
 True
