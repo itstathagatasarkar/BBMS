@@ -9,7 +9,7 @@ namespace BBMS.Entity
     /// <summary>
     /// 
     /// </summary>
-    class BloodDonationCamp
+    public class BloodDonationCamp
     {
         #region Properties
         public int BloodDonationCampID { get; set; }

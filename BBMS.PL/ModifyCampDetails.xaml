@@ -9,7 +9,6 @@
     <Grid>
         <Label Content="Camp Name" HorizontalAlignment="Left" Margin="18,54,0,0" VerticalAlignment="Top" Width="142"/>
         <ContentControl Content="MODIFY CAMP DETAILS" HorizontalAlignment="Left" Height="29" Margin="90,10,0,0" VerticalAlignment="Top" Width="217" FontSize="18" FontWeight="Bold"/>
-        <ComboBox HorizontalAlignment="Left" Margin="232,58,0,0" VerticalAlignment="Top" Width="120"/>
         <Button Content="Search Camp Details" HorizontalAlignment="Left" Height="26" Margin="112,97,0,0" VerticalAlignment="Top" Width="148" FontSize="14"/>
         <DataGrid HorizontalAlignment="Left" Height="282" Margin="10,128,0,0" VerticalAlignment="Top" Width="372"/>
         <Label Content="Blood Donation CampId" HorizontalAlignment="Left" Margin="18,141,0,0" VerticalAlignment="Top" Width="142"/>
@@ -25,6 +24,7 @@
         <TextBox HorizontalAlignment="Left" Height="23" Margin="232,296,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.868,1.048"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="232,333,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.518,2.081"/>
         <Button Content="Modify Camp Details" HorizontalAlignment="Left" Height="31" Margin="112,371,0,0" VerticalAlignment="Top" Width="148" FontSize="14" RenderTransformOrigin="0.509,0.278"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="232,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>

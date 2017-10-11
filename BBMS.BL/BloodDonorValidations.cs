@@ -126,9 +126,9 @@ namespace BBMS.BL
             return donor;
         }
 
-        public static int GetNextEmpID_BL()
+        public static int GetNextDonorID_BL()
         {
-            return BloodDonorOperations.GetNextEmpID_DAL();
+            return BloodDonorOperations.GetNextDonorID_DAL();
         }
     }
 }

@@ -123,7 +123,7 @@ namespace BBMS.DAL
         }
 
 
-        public static int GetNextEmpID_DAL()
+        public static int GetNextDonorID_DAL()
         {
 
             command.CommandText = "[bbms].[bbms.usp_GetNextDonorID]";

@@ -25,7 +25,7 @@ namespace BBMS.PL
         public AddDonorDetails1()
         {
             InitializeComponent();
-            txt_donor_id.Text = BloodDonorValidations.GetNextEmpID_BL().ToString();
+            txt_donor_id.Text = BloodDonorValidations.GetNextDonorID_BL().ToString();
         }
         
         private void Button_Click(object sender, RoutedEventArgs e)
