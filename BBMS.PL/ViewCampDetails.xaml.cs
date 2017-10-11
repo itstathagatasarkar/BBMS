@@ -22,6 +22,7 @@ namespace BBMS.PL
         public ViewCampDetails()
         {
             InitializeComponent();
+
         }
     }
 }

@@ -39,6 +39,7 @@ namespace BBMS.DAL
         }
         #endregion
         #region Methods
+
         private static string GetConnectionString()
         {
             return ConfigurationManager.ConnectionStrings["BloodBankManagementConnectionString"].ConnectionString;
@@ -153,6 +154,31 @@ namespace BBMS.DAL
             return campUpdated;
         }
 
+        public static int GetNextBloodDonationCampID_DAL()
+        {
+
+            command.CommandText = "[bbms].[bbms.usp_GetNexBloodDonationCampID]";
+            command.CommandType = CommandType.StoredProcedure;
+            int id;
+            try
+            {
+                connection.Open();
+                id = Convert.ToInt32(command.ExecuteScalar());
+            }
+            catch (BloodBankException)
+            {
+                throw;
+            }
+            catch (System.Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return id;
+        }
 
         #endregion
     }

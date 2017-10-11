@@ -59,7 +59,7 @@ namespace BBMS.BL
                 }
                 else
                 {
-                    throw new BloodBankException("Employee Details Are Invalid!");
+                    throw new BloodBankException("Blood Donation Camp Details Are Invalid!");
                 }
             }
             catch (BloodBankException)
