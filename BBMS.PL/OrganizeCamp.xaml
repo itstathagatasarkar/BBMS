@@ -14,15 +14,15 @@
         <Label Content="Blood Bank" HorizontalAlignment="Left" Margin="18,239,0,0" VerticalAlignment="Top" Width="81" RenderTransformOrigin="0.393,1.737"/>
         <Label Content="Start Date" HorizontalAlignment="Left" Margin="18,285,0,0" VerticalAlignment="Top" Width="81"/>
         <Label Content="End Date" HorizontalAlignment="Left" Margin="18,325,0,0" VerticalAlignment="Top" Width="81"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="232,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="232,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="232,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="232,198,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="232,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="232,287,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.868,1.048"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="232,325,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.518,2.081"/>
+        <TextBox Name="txt_bdc_id" HorizontalAlignment="Left" Height="23" Margin="232,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txt_bdc_name" HorizontalAlignment="Left" Height="23" Margin="232,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txt_camp_name" HorizontalAlignment="Left" Height="23" Margin="232,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txt_address" HorizontalAlignment="Left" Height="23" Margin="232,198,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txt_city" HorizontalAlignment="Left" Height="23" Margin="232,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button Content="Add Camp Details" HorizontalAlignment="Left" Height="36" Margin="104,364,0,0" VerticalAlignment="Top" Width="148" FontSize="14" Click="Button_Click"/>
         <ContentControl Content="ORGANIZE CAMP" HorizontalAlignment="Left" Height="29" Margin="112,10,0,0" VerticalAlignment="Top" Width="163" FontSize="18" FontWeight="Bold"/>
+        <DatePicker Name="dp_start_date" HorizontalAlignment="Left" Margin="238,285,0,0" VerticalAlignment="Top"/>
+        <DatePicker Name="dp_end_date" HorizontalAlignment="Left" Margin="238,327,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

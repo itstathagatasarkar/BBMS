@@ -53,12 +53,12 @@ namespace BBMS.DAL
             {
                 command.CommandText = "[bbms].[bbms.usp_AddDonor]";
                 command.Parameters.Clear();
-                command.Parameters.AddWithValue("", bd.FirstName);
-                command.Parameters.AddWithValue("", bd.LastName);
-                command.Parameters.AddWithValue("", bd.Address);
-                command.Parameters.AddWithValue("", bd.City);
-                command.Parameters.AddWithValue("", bd.MobileNo);
-                command.Parameters.AddWithValue("", bd.BloodGroup);
+                command.Parameters.AddWithValue("@FirstName", bd.FirstName);
+                command.Parameters.AddWithValue("@LastName", bd.LastName);
+                command.Parameters.AddWithValue("@Address", bd.Address);
+                command.Parameters.AddWithValue("@City", bd.City);
+                command.Parameters.AddWithValue("@MobileNo", bd.MobileNo);
+                command.Parameters.AddWithValue("@BloodGroup", bd.BloodGroup);
                 connection.Open();
                 int affectedRows = command.ExecuteNonQuery();
                 if (affectedRows > 0)
@@ -204,13 +204,13 @@ namespace BBMS.DAL
             {
                 command.CommandText = "[bbms].[bbms.usp_UpdateDonor]";
                 command.Parameters.Clear();
-                command.Parameters.AddWithValue("", bd.BloodDonorID);
-                command.Parameters.AddWithValue("", bd.FirstName);
-                command.Parameters.AddWithValue("", bd.LastName);
-                command.Parameters.AddWithValue("", bd.Address);
-                command.Parameters.AddWithValue("", bd.City);
-                command.Parameters.AddWithValue("", bd.MobileNo);
-                command.Parameters.AddWithValue("", bd.BloodGroup);
+                command.Parameters.AddWithValue("@BloodDonorID", bd.BloodDonorID);
+                command.Parameters.AddWithValue("@FirstName", bd.FirstName);
+                command.Parameters.AddWithValue("@LastName", bd.LastName);
+                command.Parameters.AddWithValue("@Address", bd.Address);
+                command.Parameters.AddWithValue("@City", bd.City);
+                command.Parameters.AddWithValue("@MobileNo", bd.MobileNo);
+                command.Parameters.AddWithValue("@BloodGroup", bd.BloodGroup);
                 connection.Open();
                 int affectedRows = command.ExecuteNonQuery();
                 if (affectedRows > 0)

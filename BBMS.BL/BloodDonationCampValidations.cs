@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using BBMS.Entity;
 using BBMS.DAL;
 using BBMS.Exceptions;
+using System.Data.SqlClient;
 
 namespace BBMS.BL
 {
@@ -90,6 +91,28 @@ namespace BBMS.BL
                 throw;
             }
             return campUpdated;
+        }
+
+        public static BloodDonationCamp SearchBloodDonationCamp_BL(int id)
+        {
+            BloodDonationCamp camp = null;
+            try
+            {
+                camp = BloodDonationCampOperations.SearchBloodDonationCamp_DAL(id);
+            }
+            catch (BloodBankException ex)
+            {
+                throw ex;
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return camp;
         }
 
         public static int GetNextBloodDonationCampID_BL()

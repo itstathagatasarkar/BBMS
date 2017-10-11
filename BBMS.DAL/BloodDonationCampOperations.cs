@@ -154,6 +154,53 @@ namespace BBMS.DAL
             return campUpdated;
         }
 
+        public static BloodDonationCamp SearchBloodDonationCamp_DAL(int id)
+        {
+            BloodDonationCamp camp = new BloodDonationCamp();
+            SqlDataReader rdr = null;
+            try
+            {
+
+                command.CommandText = "[bbms].[bbms.usp_SearchBloodDonationCamp]";
+                command.Parameters.Clear();
+                command.Parameters.AddWithValue("@BloodDonationCampID", id);
+                connection.Open();
+                DataTable dt = new DataTable();
+
+                rdr = command.ExecuteReader();
+                if (rdr.HasRows)
+                {
+                    while (rdr.Read())
+                    {
+                        camp.BloodDonationCampID = (int)rdr["BloodDonorID"];
+                        camp.CampName = rdr["CampName"].ToString();
+                        camp.Address = rdr["Address"].ToString();
+                        camp.City = rdr["City"].ToString();
+                        camp.CampStartDate = (DateTime)rdr["CampStartDate"];
+                        camp.CampEndDate = (DateTime)rdr["CampEndDate"];
+                    }
+                }
+                else
+                {
+                    throw new BloodBankException("No donor found with Donor ID" + id);
+                }
+            }
+            catch (BloodBankException)
+            {
+                throw;
+            }
+            catch (System.Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                rdr.Close();
+                connection.Close();
+            }
+            return camp;
+        }
+
         public static int GetNextBloodDonationCampID_DAL()
         {
 
