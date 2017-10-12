@@ -88,6 +88,127 @@ namespace BBMS.DAL
             }
             return inventoryList;
         }
+
+        public static bool AddInventoryDAL(BloodInventory inventory) {
+            bool inventoryAdded = false;
+
+            try
+            {
+                command.CommandText = "[bbms].[usp_AddBloodInventory]";
+                command.Parameters.Clear();
+
+                command.Parameters.AddWithValue("@bloodGroup", inventory.BloodGroup);
+                command.Parameters.AddWithValue("@numberofBottles", inventory.NumberofBottles);
+                command.Parameters.AddWithValue("@bloodBankID", inventory.BlooadBankID);
+                command.Parameters.AddWithValue("@expiryDate", inventory.ExpiryDate);                
+
+                connection.Open();
+                int rowsAffected = command.ExecuteNonQuery();
+
+                if (rowsAffected > 0)
+                    inventoryAdded = true;
+            }
+            catch (BloodBankException ex)
+            {
+                throw ex;
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                if (connection.State == ConnectionState.Open)
+                {
+                    connection.Close();
+                }
+            }
+
+            return inventoryAdded;
+        
+        }
+
+        public static int GetNextIdDAL()
+        {
+            int id = -1;
+            try
+            {
+                command.CommandText = "[bbms].[usp_BloodInventoryID]";
+                command.Parameters.Clear();
+
+                connection.Open();
+                Int32.TryParse(command.ExecuteScalar().ToString(), out id);
+                ++id;
+
+            }
+            catch (BloodBankException)
+            {
+                throw;
+            }
+            catch (SqlException)
+            {
+                throw;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                if (connection.State == ConnectionState.Open)
+                {
+                    connection.Close();
+                }
+            }
+            return id;
+        }
+
+        public static bool UpdateInventoryDAL(BloodInventory inventory)
+        {
+            bool inventoryUpdated = false;
+            try
+            {
+                command.CommandText = "[bbms].[usp_UpdateBloodInventory]";
+                command.Parameters.Clear();
+
+                command.Parameters.AddWithValue("@bloodInventoryID", inventory.BloodInventoryID);
+                command.Parameters.AddWithValue("@bloodGroup", inventory.BloodGroup);
+                command.Parameters.AddWithValue("@numberofBottles", inventory.NumberofBottles);
+                command.Parameters.AddWithValue("@bloodBankID", inventory.BlooadBankID);
+                command.Parameters.AddWithValue("@expiryDate", inventory.ExpiryDate);
+                connection.Open();
+                int rowsAffected = command.ExecuteNonQuery();
+
+                if (rowsAffected > 0)
+                    inventoryUpdated = true;
+            }
+            catch (BloodBankException)
+            {
+                throw;
+            }
+            catch (SqlException)
+            {
+                throw;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                if (connection.State == ConnectionState.Open)
+                {
+                    connection.Close();
+                }
+            }
+
+
+            return inventoryUpdated;
+        }
         #endregion
     }
 }

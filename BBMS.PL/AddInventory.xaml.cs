@@ -12,6 +12,11 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+using BBMS.BL;
+using BBMS.Entity;
+using BBMS.Exceptions;
+using System.Data.SqlClient;
+
 namespace BBMS.PL
 {
     /// <summary>
@@ -27,7 +32,21 @@ namespace BBMS.PL
         
         private void btn_add_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
 
+            }
+            catch(BloodBankException ex) {
+
+            }
+            catch (SqlException ex)
+            {
+
+            }
+            catch (Exception ex)
+            {
+
+            }
         }
     }
 }

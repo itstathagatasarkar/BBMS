@@ -36,5 +36,52 @@ namespace BBMS.BL
 
             return inventoryList;
         }
+
+        public static bool AddInventoryBL(BloodInventory inventory) {
+            bool inventoryAdded = false;
+
+            try
+            {
+                inventoryAdded = BloodInventoryOperations.AddInventoryDAL(inventory);
+            }
+            catch (BloodBankException ex)
+            {
+                throw ex;
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return inventoryAdded;
+        }
+
+        public static int GetNextIdBL()
+        {
+            int id = -1;
+
+            try
+            {
+                id = BloodInventoryOperations.GetNextIdDAL();
+            }
+            catch (BloodBankException ex)
+            {
+                throw ex;
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return id;
+        }
     }
 }
