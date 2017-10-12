@@ -43,6 +43,7 @@
     <Compile Include="BloodBankOperations.cs" />
     <Compile Include="BloodDonationCampOperations.cs" />
     <Compile Include="BloodDonorOperations.cs" />
+    <Compile Include="HospitalOperations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
