@@ -5,12 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BBMS.PL"
         mc:Ignorable="d"
-        Title="InventoryView" Height="400" Width="400">
+        Title="InventoryView" Height="400" Width="570.149">
     <Grid>
-        <ContentControl Content="INVENTORY BLOOD DETAILS" HorizontalAlignment="Left" Height="29" Margin="75,10,0,0" VerticalAlignment="Top" Width="219"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="23,44,0,0" VerticalAlignment="Top" Width="113"/>
-        <TextBox HorizontalAlignment="Left" Height="26" Margin="206,44,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="145"/>
-        <Button Content="Button" HorizontalAlignment="Left" Height="31" Margin="97,86,0,0" VerticalAlignment="Top" Width="171"/>
+        <ContentControl Content="INVENTORY DETAILS" HorizontalAlignment="Left" Height="29" Margin="178,10,0,0" VerticalAlignment="Top" Width="230" FontSize="22" FontWeight="Bold"/>
+        <DataGrid x:Name="grid_display" HorizontalAlignment="Left" Margin="10,66,0,0" VerticalAlignment="Top" Height="293" Width="542"/>
 
     </Grid>
 </Window>

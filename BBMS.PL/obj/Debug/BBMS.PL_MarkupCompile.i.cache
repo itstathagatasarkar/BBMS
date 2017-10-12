@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\MiniProject\BBMS.PL\obj\Debug\
+C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.PL\obj\Debug\
 BBMS.PL
 none
 false
 DEBUG;TRACE
-C:\MiniProject\BBMS.PL\App.xaml
-24-912579676
+C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.PL\App.xaml
+25-2035648656
 1756709346
-32-1383904871
-15756070686
-AddBloodBankDetails.xaml;AddDonorDetails1.xaml;AddHospitalDetails.xaml;BloodBank.xaml;BloodDonationCamp.xaml;BloodDonor.xaml;DeleteBloodBankDetails.xaml;DeleteDonorDetails.xaml;DeleteHospitalDetails.xaml;HomePage.xaml;Hospital.xaml;InventoryForBlood.xaml;InventoryView.xaml;Login.xaml;MainWindow.xaml;ModifyCampDetails.xaml;OrganizeCamp.xaml;UpdateBloodBankDetails.xaml;UpdateDonorDetails.xaml;UpdateHospitalDetails.xaml;ViewBloodBankDetails.xaml;ViewCampDetails.xaml;ViewDonorDetails.xaml;ViewHospitalDetails.xaml;
+33-1335949859
+15957430135
+AddBloodBankDetails.xaml;AddDonorDetails1.xaml;AddHospitalDetails.xaml;AddInventory.xaml;BloodBank.xaml;BloodDonationCamp.xaml;BloodDonor.xaml;DeleteBloodBankDetails.xaml;DeleteDonorDetails.xaml;DeleteHospitalDetails.xaml;HomePage.xaml;Hospital.xaml;InventoryForBlood.xaml;InventoryView.xaml;Login.xaml;MainWindow.xaml;ModifyCampDetails.xaml;OrganizeCamp.xaml;UpdateBloodBankDetails.xaml;UpdateDonorDetails.xaml;UpdateHospitalDetails.xaml;ViewBloodBankDetails.xaml;ViewCampDetails.xaml;ViewDonorDetails.xaml;ViewHospitalDetails.xaml;
 
 False
 

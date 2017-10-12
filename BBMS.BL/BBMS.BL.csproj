@@ -42,6 +42,7 @@
     <Compile Include="BloodBankValidations.cs" />
     <Compile Include="BloodDonationCampValidations.cs" />
     <Compile Include="BloodDonorValidations.cs" />
+    <Compile Include="BloodInventoryValidation.cs" />
     <Compile Include="HospitalValidations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

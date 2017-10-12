@@ -63,6 +63,9 @@
     <Compile Include="AddHospitalDetails.xaml.cs">
       <DependentUpon>AddHospitalDetails.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AddInventory.xaml.cs">
+      <DependentUpon>AddInventory.xaml</DependentUpon>
+    </Compile>
     <Compile Include="BloodBank.xaml.cs">
       <DependentUpon>BloodBank.xaml</DependentUpon>
     </Compile>
@@ -120,6 +123,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="AddHospitalDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddInventory.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

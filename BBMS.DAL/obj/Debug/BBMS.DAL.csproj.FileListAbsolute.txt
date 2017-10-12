@@ -36,3 +36,12 @@ C:\Mini project\BBMS.DAL\bin\Debug\BBMS.Exceptions.pdb
 C:\Mini project\BBMS.DAL\obj\Debug\BBMS.DAL.csprojResolveAssemblyReference.cache
 C:\Mini project\BBMS.DAL\obj\Debug\BBMS.DAL.dll
 C:\Mini project\BBMS.DAL\obj\Debug\BBMS.DAL.pdb
+C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.DAL\bin\Debug\BBMS.DAL.dll
+C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.DAL\bin\Debug\BBMS.DAL.pdb
+C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.DAL\bin\Debug\BBMS.Entity.dll
+C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.DAL\bin\Debug\BBMS.Exceptions.dll
+C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.DAL\bin\Debug\BBMS.Entity.pdb
+C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.DAL\bin\Debug\BBMS.Exceptions.pdb
+C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.DAL\obj\Debug\BBMS.DAL.csprojResolveAssemblyReference.cache
+C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.DAL\obj\Debug\BBMS.DAL.dll
+C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.DAL\obj\Debug\BBMS.DAL.pdb

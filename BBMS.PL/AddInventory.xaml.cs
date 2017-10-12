@@ -15,18 +15,19 @@ using System.Windows.Shapes;
 namespace BBMS.PL
 {
     /// <summary>
-    /// Interaction logic for InventoryForBlood.xaml
+    /// Interaction logic for AddInventory.xaml
     /// </summary>
-    public partial class InventoryForBlood : Window
+    public partial class AddInventory : Window
     {
-        public InventoryForBlood()
+        public AddInventory()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        
+        private void btn_add_Click(object sender, RoutedEventArgs e)
         {
-            new InventoryView().Show();
+
         }
     }
 }

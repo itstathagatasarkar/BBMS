@@ -14,3 +14,8 @@ C:\Mini Project\BBMS.Exceptions\bin\Debug\BBMS.Exceptions.pdb
 C:\Mini Project\BBMS.Exceptions\obj\Debug\BBMS.Exceptions.csprojResolveAssemblyReference.cache
 C:\Mini Project\BBMS.Exceptions\obj\Debug\BBMS.Exceptions.dll
 C:\Mini Project\BBMS.Exceptions\obj\Debug\BBMS.Exceptions.pdb
+C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.Exceptions\bin\Debug\BBMS.Exceptions.dll
+C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.Exceptions\bin\Debug\BBMS.Exceptions.pdb
+C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.Exceptions\obj\Debug\BBMS.Exceptions.csprojResolveAssemblyReference.cache
+C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.Exceptions\obj\Debug\BBMS.Exceptions.dll
+C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.Exceptions\obj\Debug\BBMS.Exceptions.pdb

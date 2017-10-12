@@ -44,3 +44,14 @@ C:\MiniProject\BBMS.BL\bin\Debug\BBMS.Exceptions.pdb
 C:\MiniProject\BBMS.BL\obj\Debug\BBMS.BL.csprojResolveAssemblyReference.cache
 C:\MiniProject\BBMS.BL\obj\Debug\BBMS.BL.dll
 C:\MiniProject\BBMS.BL\obj\Debug\BBMS.BL.pdb
+C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.BL\bin\Debug\BBMS.BL.dll
+C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.BL\bin\Debug\BBMS.BL.pdb
+C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.BL\bin\Debug\BBMS.DAL.dll
+C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.BL\bin\Debug\BBMS.Entity.dll
+C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.BL\bin\Debug\BBMS.Exceptions.dll
+C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.BL\bin\Debug\BBMS.DAL.pdb
+C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.BL\bin\Debug\BBMS.Entity.pdb
+C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.BL\bin\Debug\BBMS.Exceptions.pdb
+C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.BL\obj\Debug\BBMS.BL.csprojResolveAssemblyReference.cache
+C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.BL\obj\Debug\BBMS.BL.dll
+C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.BL\obj\Debug\BBMS.BL.pdb

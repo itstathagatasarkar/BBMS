@@ -12,6 +12,11 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+using BBMS.Entity;
+using BBMS.Exceptions;
+using BBMS.BL;
+using System.Data.SqlClient;
+
 namespace BBMS.PL
 {
     /// <summary>
@@ -22,6 +27,28 @@ namespace BBMS.PL
         public InventoryView()
         {
             InitializeComponent();
+            GetInventory();
+        }
+
+        private void GetInventory()
+        {
+            try
+            {
+                grid_display.ItemsSource = BloodInventoryValidation.GetBloodInventoryListBL();
+                
+            }
+            catch (BloodBankException ex)
+            {
+                MessageBox.Show("Cannot Get Inventory. Reason: " + ex.Message);
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Cannot Get Inventory. Reason: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Cannot Get Inventory. Reason: " + ex.Message);
+            }
         }
     }
 }

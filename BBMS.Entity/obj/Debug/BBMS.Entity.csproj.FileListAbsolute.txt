@@ -14,3 +14,8 @@ C:\Mini Project\BBMS.Entity\bin\Debug\BBMS.Entity.pdb
 C:\Mini Project\BBMS.Entity\obj\Debug\BBMS.Entity.csprojResolveAssemblyReference.cache
 C:\Mini Project\BBMS.Entity\obj\Debug\BBMS.Entity.dll
 C:\Mini Project\BBMS.Entity\obj\Debug\BBMS.Entity.pdb
+C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.Entity\bin\Debug\BBMS.Entity.dll
+C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.Entity\bin\Debug\BBMS.Entity.pdb
+C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.Entity\obj\Debug\BBMS.Entity.csprojResolveAssemblyReference.cache
+C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.Entity\obj\Debug\BBMS.Entity.dll
+C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.Entity\obj\Debug\BBMS.Entity.pdb
