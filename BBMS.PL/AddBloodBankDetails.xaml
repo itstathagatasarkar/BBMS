@@ -6,7 +6,16 @@
         xmlns:local="clr-namespace:BBMS.PL"
         mc:Ignorable="d"
         Title="AddBloodBankDetails" Height="425" Width="400">
+  <Window.Resources>
+    <Color x:Key="Color1">#FFA8A5A5</Color>
+  </Window.Resources>
     <Grid>
+      <Grid.Background>
+        <RadialGradientBrush>
+          <GradientStop Color="#FFEE928B" Offset="1"/>
+          <GradientStop Color="#FFD8C3BF" Offset="0.523"/>
+        </RadialGradientBrush>
+      </Grid.Background>
         <ContentControl Content="ADD BLOOD BANK DETAILS" HorizontalAlignment="Left" Height="27" Margin="73,10,0,0" VerticalAlignment="Top" Width="243" FontSize="18" FontWeight="Bold"/>
         <Label Content="Blood Bank Id" HorizontalAlignment="Left" Margin="23,49,0,0" VerticalAlignment="Top" Width="105" Height="24"/>
         <Label Content="Blood Bank Name" HorizontalAlignment="Right" Margin="0,86,264,0" VerticalAlignment="Top" RenderTransformOrigin="0.667,0.833" Height="24"/>

@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="DeleteBloodBankDetails" Height="300" Width="300">
     <Grid>
+      <Grid.Background>
+        <RadialGradientBrush>
+          <GradientStop Color="#FFEE928B" Offset="1"/>
+          <GradientStop Color="#FFD8C3BF" Offset="0.523"/>
+        </RadialGradientBrush>
+      </Grid.Background>
         <ContentControl Content="DELETE BLOOD BANK DETAILS" HorizontalAlignment="Left" Height="30" Margin="10,21,0,0" VerticalAlignment="Top" Width="272" FontSize="18" FontWeight="Bold"/>
         <Label Content="Blood Bank ID" HorizontalAlignment="Right" Margin="0,96,176,0" VerticalAlignment="Top" RenderTransformOrigin="0.699,0.577" Height="27" Width="106"/>
         <Button x:Name="btn_blood_bank_delete" Content="Delete Details" HorizontalAlignment="Left" Height="32" Margin="82,156,0,0" VerticalAlignment="Top" Width="129" FontWeight="Bold" FontSize="16" Click="btn_blood_bank_delete_Click"/>

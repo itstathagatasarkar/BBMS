@@ -1,5 +1,8 @@
-﻿using System;
+﻿using BBMS.BL;
+using BBMS.Exceptions;
+using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,6 +25,36 @@ namespace BBMS.PL
         public ViewHospitalDetails()
         {
             InitializeComponent();
+        
+            DisplayHospital();
+        }
+        private void DisplayHospital()
+        {
+            List<BBMS.Entity.Hospital> hospitalList = null;
+            try
+            {
+                hospitalList = HospitalValidations.DisplayHospital_BL();
+
+
+                dt_hospital_list.ItemsSource = hospitalList;
+
+
+
+            }
+            catch (BloodBankException ex)
+            {
+                MessageBox.Show("Exception: " + ex.Message);
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Exception: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Exception: " + ex.Message);
+            }
+
         }
     }
-}
+    }
+

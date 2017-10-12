@@ -5,20 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BBMS.PL"
         mc:Ignorable="d"
-        Title="AddHospitalDetails" Height="300" Width="300">
-    <Grid>
-        <Label Content="HospitalName" HorizontalAlignment="Left" Margin="16,64,0,0" VerticalAlignment="Top"/>
-        <Label Content="Address " HorizontalAlignment="Left" Margin="25,103,0,0" VerticalAlignment="Top" Width="73"/>
-        <Label Content="City" HorizontalAlignment="Left" Margin="25,140,0,0" VerticalAlignment="Top" Width="68" RenderTransformOrigin="0.596,1.311"/>
-        <Label Content="ContactNo" HorizontalAlignment="Left" Margin="16,177,0,0" VerticalAlignment="Top" Width="72"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="127,67,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="127,106,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="127,143,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="127,180,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Add Details" HorizontalAlignment="Left" Margin="82,224,0,0" VerticalAlignment="Top" Width="102" RenderTransformOrigin="0.333,0.136" FontWeight="Bold" FontSize="16"/>
-        <ContentControl Content="ADD HOSPITAL DETAILS" HorizontalAlignment="Left" Margin="40,10,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        Title="AddHospitalDetails" Height="400" Width="300">
+  <Grid x:Name="txt" Margin="0,0,-41.4,0">
+    <Grid.Background>
+      <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="Black" Offset="0"/>
+        <GradientStop Color="#FF95ECEE" Offset="0.109"/>
+      </LinearGradientBrush>
+    </Grid.Background>
+    <Label Content="HospitalName" HorizontalAlignment="Left" Margin="30,126,0,0" VerticalAlignment="Top"/>
+    <Label Content="Address " HorizontalAlignment="Left" Margin="30,171,0,0" VerticalAlignment="Top" Width="73" RenderTransformOrigin="0.506,0.203"/>
+    <Label Content="City" HorizontalAlignment="Left" Margin="30,214,0,0" VerticalAlignment="Top" Width="68" RenderTransformOrigin="0.596,1.311"/>
+    <Label Content="ContactNo" HorizontalAlignment="Left" Margin="30,259,0,0" VerticalAlignment="Top" Width="72" RenderTransformOrigin="0.682,2.297"/>
+    <TextBox x:Name="txt_Name" HorizontalAlignment="Left" Height="23" Margin="139,129,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.49,0.83"/>
+    <TextBox x:Name="txt_Address" HorizontalAlignment="Left" Height="23" Margin="140,174,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+    <TextBox x:Name="txt_City" HorizontalAlignment="Left" Height="23" Margin="140,218,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+    <TextBox x:Name="txt_Contact" HorizontalAlignment="Left" Height="23" Margin="141,263,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+    <Button x:Name="btn_Add" Content="Add Details" HorizontalAlignment="Left" Margin="81,318,0,0" VerticalAlignment="Top" Width="102" RenderTransformOrigin="0.333,0.136" FontWeight="Bold" FontSize="16" Click="Button_Click"/>
+    <ContentControl Content="ADD HOSPITAL DETAILS" HorizontalAlignment="Left" Margin="40,10,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+    <Label Content="HospitalID" HorizontalAlignment="Left" Margin="30,77,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.543,0.801" Width="83"/>
+    <TextBox x:Name="txt_HospitalId" HorizontalAlignment="Left" Height="23" Margin="139,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
 
-    </Grid>
+  </Grid>
 </Window>
 
 

@@ -11,6 +11,10 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using BBMS.BL;
+using BBMS.Exceptions;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace BBMS.PL
 {
@@ -22,6 +26,17 @@ namespace BBMS.PL
         public DeleteHospitalDetails()
         {
             InitializeComponent();
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string name = Convert.ToString(txt_name.Text);
+            bool hospitalDeleted = HospitalValidations.DeleteHospital_BL(name);
+            if (hospitalDeleted)
+                MessageBox.Show("Hospital Successfully deleted");
+            else
+                throw new BloodBankException("Hospital not successfully deleted");
         }
     }
 }

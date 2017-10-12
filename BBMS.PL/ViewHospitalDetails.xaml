@@ -6,12 +6,25 @@
         xmlns:local="clr-namespace:BBMS.PL"
         mc:Ignorable="d"
         Title="ViewHospitalDetails" Height="450" Width="500">
-    <Grid>
-        <Label Content="Hospital Name" HorizontalAlignment="Left" Margin="61,57,0,0" VerticalAlignment="Top" Width="116"/>
-        <ContentControl Content="VIEW HOSPITAL DETAILS" HorizontalAlignment="Left" Height="29" Margin="120,10,0,0" VerticalAlignment="Top" Width="227" FontSize="18" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Left" Height="26" Margin="268,57,-131,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155"/>
-        <DataGrid HorizontalAlignment="Left" Height="280" Margin="10,130,-190,-140" VerticalAlignment="Top" Width="472"/>
-        <Button Content="View Details" HorizontalAlignment="Left" Height="27" Margin="159,88,-1,0" VerticalAlignment="Top" Width="134" FontSize="16" FontWeight="Bold"/>
+  <Grid>
+    <Grid.Background>
+      <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="Black" Offset="0"/>
+        <GradientStop Color="#FF95ECEE" Offset="0.109"/>
+      </LinearGradientBrush>
+    </Grid.Background>
 
-    </Grid>
+    <ContentControl Content="VIEW ALL HOSPITAL DETAILS" HorizontalAlignment="Left" Height="29" Margin="114,12,0,0" VerticalAlignment="Top" Width="251" FontSize="18" FontWeight="Bold"/>
+    <DataGrid x:Name="dt_hospital_list" HorizontalAlignment="Left" Height="280" Margin="9,73,0,0" VerticalAlignment="Top" Width="472">
+      <DataGrid.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+          <GradientStop Color="Black" Offset="0"/>
+          <GradientStop Color="White" Offset="1"/>
+          <GradientStop Color="#FF434343" Offset="0.043"/>
+          <GradientStop Color="#FF757575" Offset="0.075"/>
+          <GradientStop Color="#FFBBBBBB" Offset="0.491"/>
+        </LinearGradientBrush>
+      </DataGrid.Background>
+    </DataGrid>
+  </Grid>
 </Window>
