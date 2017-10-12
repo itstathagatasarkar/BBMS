@@ -16,7 +16,7 @@ namespace BBMS.Entity
         public string HospitalName { get; set; }
         public string Address { get; set; }
         public string City { get; set; }
-        public int ContactNo { get; set; }
+        public string ContactNo { get; set; }
         #endregion
     }
 }

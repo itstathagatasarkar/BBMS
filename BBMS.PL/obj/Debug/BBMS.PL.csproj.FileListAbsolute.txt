@@ -265,7 +265,6 @@ C:\MiniProject\BBMS.PL\obj\Debug\ViewHospitalDetails.baml
 C:\MiniProject\BBMS.PL\obj\Debug\BBMS.PL.g.resources
 C:\MiniProject\BBMS.PL\obj\Debug\BBMS.PL.Properties.Resources.resources
 C:\MiniProject\BBMS.PL\obj\Debug\BBMS.PL.csproj.GenerateResource.Cache
-C:\MiniProject\BBMS.PL\obj\Debug\BBMS.PL.csproj.CoreCompileInputs.cache
 C:\MiniProject\BBMS.PL\obj\Debug\BBMS.PL.exe
 C:\MiniProject\BBMS.PL\obj\Debug\BBMS.PL.pdb
 C:\Mini project\BBMS.PL\obj\Debug\BBMS.PL.csprojResolveAssemblyReference.cache

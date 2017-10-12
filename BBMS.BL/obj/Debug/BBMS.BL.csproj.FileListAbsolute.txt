@@ -42,6 +42,5 @@ C:\MiniProject\BBMS.BL\bin\Debug\BBMS.DAL.pdb
 C:\MiniProject\BBMS.BL\bin\Debug\BBMS.Entity.pdb
 C:\MiniProject\BBMS.BL\bin\Debug\BBMS.Exceptions.pdb
 C:\MiniProject\BBMS.BL\obj\Debug\BBMS.BL.csprojResolveAssemblyReference.cache
-C:\MiniProject\BBMS.BL\obj\Debug\BBMS.BL.csproj.CoreCompileInputs.cache
 C:\MiniProject\BBMS.BL\obj\Debug\BBMS.BL.dll
 C:\MiniProject\BBMS.BL\obj\Debug\BBMS.BL.pdb
