@@ -9,7 +9,7 @@ namespace BBMS.Entity
     /// <summary>
     /// 
     /// </summary>
-    class Hospital
+    public class Hospital
     {
         #region Properties
         public int HospitalID{ get; set; }
