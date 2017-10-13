@@ -28,5 +28,15 @@ namespace BBMS.PL
         {
             new InventoryView().Show();
         }
+
+        private void btn_add_to_inventory_Click(object sender, RoutedEventArgs e)
+        {
+            new AddInventory().Show();
+        }
+
+        private void btn_update_inventory_Click(object sender, RoutedEventArgs e)
+        {
+            new UpdateInventory().Show();
+        }
     }
 }

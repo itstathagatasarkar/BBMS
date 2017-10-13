@@ -167,6 +167,62 @@ namespace BBMS.DAL
             return id;
         }
 
+        public static BloodInventory SearchBloodInventoryDAL(int id)
+        {
+            BloodInventory inventory = null;
+
+            try
+            {
+                command.CommandText = "[bbms].[usp_DisplayBloodInventoryById]";
+                command.Parameters.Clear();
+                command.Parameters.AddWithValue("@bloodInventoryID", id);
+
+                connection.Open();
+                SqlDataReader reader;
+
+                reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    reader.Read();
+
+                    inventory = new BloodInventory();
+                    inventory.BloodInventoryID = Convert.ToInt32(reader[0]);
+                    inventory.BlooadBankID = Convert.ToInt32(reader[1]);
+                    inventory.BloodGroup = reader[2].ToString();
+                    inventory.NumberofBottles = Convert.ToInt32(reader[3].ToString());
+                    inventory.ExpiryDate = DateTime.Parse(reader[4].ToString());
+                }
+                else
+                {
+                    throw new BloodBankException("Invalid Blood Inventory with ID #" + id);
+                }
+
+
+
+            }
+            catch (BloodBankException)
+            {
+                throw;
+            }
+            catch (SqlException)
+            {
+                throw;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                if (connection.State == ConnectionState.Open)
+                {
+                    connection.Close();
+                }
+            }
+
+            return inventory;
+        }
+
         public static bool UpdateInventoryDAL(BloodInventory inventory)
         {
             bool inventoryUpdated = false;

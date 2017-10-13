@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.PL\App.xaml
-25-2035648656
+26100835696
 1756709346
-33-1335949859
+34-1209341460
 15957430135
-AddBloodBankDetails.xaml;AddDonorDetails1.xaml;AddHospitalDetails.xaml;AddInventory.xaml;BloodBank.xaml;BloodDonationCamp.xaml;BloodDonor.xaml;DeleteBloodBankDetails.xaml;DeleteDonorDetails.xaml;DeleteHospitalDetails.xaml;HomePage.xaml;Hospital.xaml;InventoryForBlood.xaml;InventoryView.xaml;Login.xaml;MainWindow.xaml;ModifyCampDetails.xaml;OrganizeCamp.xaml;UpdateBloodBankDetails.xaml;UpdateDonorDetails.xaml;UpdateHospitalDetails.xaml;ViewBloodBankDetails.xaml;ViewCampDetails.xaml;ViewDonorDetails.xaml;ViewHospitalDetails.xaml;
+AddBloodBankDetails.xaml;AddDonorDetails1.xaml;AddHospitalDetails.xaml;AddInventory.xaml;BloodBank.xaml;BloodDonationCamp.xaml;BloodDonor.xaml;DeleteBloodBankDetails.xaml;DeleteDonorDetails.xaml;DeleteHospitalDetails.xaml;HomePage.xaml;Hospital.xaml;InventoryForBlood.xaml;InventoryView.xaml;Login.xaml;MainWindow.xaml;ModifyCampDetails.xaml;OrganizeCamp.xaml;UpdateBloodBankDetails.xaml;UpdateDonorDetails.xaml;UpdateHospitalDetails.xaml;UpdateInventory.xaml;ViewBloodBankDetails.xaml;ViewCampDetails.xaml;ViewDonorDetails.xaml;ViewHospitalDetails.xaml;
 
-False
+True
 

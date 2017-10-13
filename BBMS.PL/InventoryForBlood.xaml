@@ -8,8 +8,8 @@
         Title="InventoryForBlood" Height="300" Width="300">
     <Grid>
         <Button Content="Display Inventory" HorizontalAlignment="Left" Margin="61,162,0,0" VerticalAlignment="Top" Width="173" Background="Yellow" FontSize="14" FontWeight="Bold" Click="Button_Click"/>
-        <Button Content="Add To Inventory" HorizontalAlignment="Left" Margin="61,83,0,0" VerticalAlignment="Top" Width="173" Background="Yellow" FontSize="14" FontWeight="Bold"/>
-        <Button Content="Update Inventory Record" HorizontalAlignment="Left" Height="25" Margin="61,122,0,0" VerticalAlignment="Top" Width="173" Background="Yellow" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="btn_add_to_inventory" Content="Add To Inventory" HorizontalAlignment="Left" Margin="61,83,0,0" VerticalAlignment="Top" Width="173" Background="Yellow" FontSize="14" FontWeight="Bold" Click="btn_add_to_inventory_Click"/>
+        <Button x:Name="btn_update_inventory" Content="Update Inventory Record" HorizontalAlignment="Left" Height="25" Margin="61,122,0,0" VerticalAlignment="Top" Width="173" Background="Yellow" FontSize="14" FontWeight="Bold" Click="btn_update_inventory_Click"/>
         <Grid.Background>
             <ImageBrush ImageSource="inventory.jpg"/>
         </Grid.Background>

@@ -102,6 +102,9 @@
     <Compile Include="UpdateHospitalDetails.xaml.cs">
       <DependentUpon>UpdateHospitalDetails.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UpdateInventory.xaml.cs">
+      <DependentUpon>UpdateInventory.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewBloodBankDetails.xaml.cs">
       <DependentUpon>ViewBloodBankDetails.xaml</DependentUpon>
     </Compile>
@@ -209,6 +212,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UpdateHospitalDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UpdateInventory.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -412,3 +412,5 @@ C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.PL\obj\D
 C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.PL\obj\Debug\BBMS.PL.pdb
 C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.PL\obj\Debug\AddInventory.baml
 C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.PL\obj\Debug\AddInventory.g.cs
+C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.PL\obj\Debug\UpdateInventory.baml
+C:\Users\Tathagata Sarkar\Desktop\Mini Project\Mini Project Edited\BBMS.PL\obj\Debug\UpdateInventory.g.cs
