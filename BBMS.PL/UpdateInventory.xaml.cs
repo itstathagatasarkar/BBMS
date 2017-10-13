@@ -39,18 +39,44 @@ namespace BBMS.PL
             {
                 inventory = BloodInventoryValidation.SearchBloodInventoryBL(id);
                 if (inventory != null)
-                {
-
-                    cmb_blood_group.Text = inventory.BloodGroup;
+                {                    
+                    int index = -1;
+                    switch(inventory.BloodGroup){
+                        case "A+":
+                            index = 0;
+                            break;
+                        case "A-":
+                            index = 1;
+                            break;
+                        case "B+":
+                            index = 2;
+                            break;
+                        case "B-":
+                            index = 3;
+                            break;
+                        case "O+":
+                            index = 4;
+                            break;
+                        case "O-":
+                            index = 5;
+                            break;
+                        case "AB+":
+                            index = 6;
+                            break;
+                        case "AB-":
+                            index = 7;
+                            break;
+                    }
+                    cmb_blood_group.SelectedIndex = index; ;
                     txt_bottles.Text = inventory.NumberofBottles.ToString();                    
                     dtpicker_expiary.SelectedDate = inventory.ExpiryDate;
                     txt_bloodbank_id.Text = inventory.BlooadBankID.ToString();
 
+                    txt_id.IsEnabled = false;
                     txt_bloodbank_id.IsEnabled = true;
                     txt_bottles.IsEnabled = true;
                     dtpicker_expiary.IsEnabled = true;
                     cmb_blood_group.IsEnabled = true;
-
                     btn_fetch.IsEnabled = false;
                     btn_update.IsEnabled = true;
                 }
